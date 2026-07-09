@@ -33,17 +33,7 @@ const TitleScene: React.FC = () => {
         <div style={{ opacity: s, transform: `translateY(${(1 - s) * 20}px)` }}>
           <Logo size={140} glow={1.2} />
         </div>
-        <div
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 24,
-            letterSpacing: "0.55em",
-            color: theme.cyan,
-            opacity: interpolate(frame, [24, 60], [0, 1], { extrapolateRight: "clamp" }),
-          }}
-        >
-          CHAPTER V
-        </div>
+        
         <Title delay={40} size={92}>
           Smart Care Coordination
         </Title>

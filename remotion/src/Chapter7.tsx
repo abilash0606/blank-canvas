@@ -34,11 +34,7 @@ const TitleScene: React.FC = () => {
           }} />
           <Logo size={140} glow={1.2} />
         </div>
-        <div style={{
-          fontFamily: "'Inter', sans-serif", fontSize: 24, letterSpacing: "0.55em",
-          color: theme.cyan,
-          opacity: interpolate(frame, [24, 60], [0, 1], { extrapolateRight: "clamp" }),
-        }}>CHAPTER VII</div>
+        
         <Title delay={40} size={92}>Critical Care Intelligence</Title>
         <Sub delay={80}>When every second counts.</Sub>
       </AbsoluteFill>

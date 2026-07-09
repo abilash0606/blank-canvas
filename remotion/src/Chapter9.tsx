@@ -40,11 +40,7 @@ const TitleScene: React.FC = () => {
           }} />
           <Logo size={150} glow={1.4} />
         </div>
-        <div style={{
-          fontFamily: "'Inter', sans-serif", fontSize: 24, letterSpacing: "0.55em",
-          color: theme.cyan,
-          opacity: interpolate(frame, [24, 60], [0, 1], { extrapolateRight: "clamp" }),
-        }}>CHAPTER IX</div>
+        
         <Title delay={40} size={92}>The AI Intelligence Layer</Title>
         <Sub delay={80}>The intelligence behind every decision.</Sub>
       </AbsoluteFill>

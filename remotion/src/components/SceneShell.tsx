@@ -17,7 +17,9 @@ export const SceneShell: React.FC<{
   children?: React.ReactNode; // illustration
   align?: "split" | "center";
   showLogo?: boolean;
-}> = ({ kicker, title, sub, headline, seed = 3, intensity = 0.9, children, align = "split", showLogo = true }) => {
+}> = ({ kicker: rawKicker, title, sub, headline, seed = 3, intensity = 0.9, children, align = "split", showLogo = true }) => {
+  // Strip auto-generated "Scene NN · ..." and "Chapter NN · ..." labels per user request.
+  const kicker = rawKicker && /^(scene|chapter)\s*\d/i.test(rawKicker.trim()) ? undefined : rawKicker;
   const frame = useCurrentFrame();
   const push = interpolate(frame, [0, 480], [1.0, 1.05]);
   return (
