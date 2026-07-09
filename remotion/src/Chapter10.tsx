@@ -27,11 +27,7 @@ const TitleScene: React.FC = () => {
         <div style={{ opacity: s, transform: `translateY(${(1 - s) * 20}px)` }}>
           <Logo size={150} glow={1.4} />
         </div>
-        <div style={{
-          fontFamily: "'Inter', sans-serif", fontSize: 24, letterSpacing: "0.55em",
-          color: theme.cyan,
-          opacity: interpolate(frame, [24, 60], [0, 1], { extrapolateRight: "clamp" }),
-        }}>CHAPTER X</div>
+        
         <Title delay={40} size={92}>The Future of Healthcare</Title>
         <Sub delay={80}>Built for today. Designed for tomorrow.</Sub>
       </AbsoluteFill>

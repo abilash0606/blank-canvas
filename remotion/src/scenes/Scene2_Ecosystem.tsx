@@ -160,7 +160,7 @@ export const Scene2_Ecosystem: React.FC = () => {
       </AbsoluteFill>
 
       <AbsoluteFill style={{ padding: 90, gap: 16 }}>
-        <Kicker delay={10}>Chapter 02 · The HuNova Vision</Kicker>
+        
         <Title delay={20} size={66}>An ecosystem awakens.</Title>
       </AbsoluteFill>
     </AbsoluteFill>
